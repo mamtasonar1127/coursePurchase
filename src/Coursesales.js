@@ -24,9 +24,9 @@ render()
     return(
         <div>
             <h1>You can buy courses:</h1> 
-            <div id="course">
+            <div id="courses">
                 {courses}
-                <p id="total">Total<b>{this.state.total}</b></p>
+                <p id="total">Total:<b>{this.state.total}</b></p>
             </div>
         </div>
     )
@@ -50,7 +50,7 @@ class Course extends React.Component{
     render(){
         return(
             <div>
-                <p onClick={this.clicker}>{this.props.name}<b>{this.props.price}</b></p>
+                <p className={this.state.active ? 'active' :''} onClick={this.clicker}>{this.props.name}<b> {this.props.price}</b></p>
             </div>
         );
     }

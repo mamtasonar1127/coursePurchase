@@ -14,13 +14,13 @@ export default class App extends React.Component{
         {name:'Complete Data Science', price: 299}
         
       ];
-      return(
+      return( 
         <div className="App">
-        <header className="App-header">
+        <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to Course Sales</h2>
           <Coursesales items={courses}/>
-        </header> 
+        </div> 
       </div>
       )
   }
